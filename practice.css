@@ -1,0 +1,15 @@
+body {
+    background-color: aqua;
+}
+.one{
+    
+  border-bottom: 2px solid grey ;
+
+}
+p {
+  font-size: 20px;
+  font-family:Impact ;
+  width: 50%;
+ display: flex;
+ align-items: center;
+}
