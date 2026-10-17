@@ -49,9 +49,6 @@ section {
     border-radius: 12px;
     box-shadow: 2px 2px 5px gray;
 }
-figcaption {
-    font-style: italic;
-}
 .skill-container {
     display: flex;
     gap: 15px;
