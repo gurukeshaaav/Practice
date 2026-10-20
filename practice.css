@@ -82,16 +82,18 @@ input:focus, textarea:focus {
     border: 2px solid blue;
 }
 button {
-    background-color: #123047;
-    color: white;
+    background-color:#245577;
+    color: aqua;
     padding: 10px 20px;
     margin-top: 15px;
     border: 1px solid #123047;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 16px; 
+
 }
 button:hover {
-    background-color: #245577;
+    background-color: aqua;
+    color: #123047;
 }
 footer {
     background-color: #123047;
