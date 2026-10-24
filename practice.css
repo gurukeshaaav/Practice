@@ -85,11 +85,6 @@ section {
     font-size: 26px;
     margin-bottom: 10px;
 }
-
-.face p {
-    color: white;
-}
-
 .front {
     background: linear-gradient(135deg, #123047 0%, #245577 50%, #4ecfd3 100%);
 }
@@ -204,11 +199,10 @@ footer {
     font-size: 26px;
     margin-bottom: 10px;
 }
-
-.face p {
+face p {
     color: white;
+    font-size: 16px;
 }
-
 .front {
     background: linear-gradient(135deg, #123047 0%, #245577 50%, #4ecfd3 100%);
 }
@@ -240,4 +234,13 @@ footer {
         display: inline-block;
         margin: 5px;
     }
+}
+#name-input{
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #123047;
+    border-radius: 5px;
+    font-size: 16px;
+
 }
