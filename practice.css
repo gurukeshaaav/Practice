@@ -25,10 +25,11 @@ h2 {
     text-align: center;
 }
 h3 {
-    color: #123047;
+    color: white;
 }
 p {
     font-size: 16px;
+    color: white;
 }
 nav {
     text-align: center;
@@ -43,7 +44,8 @@ section {
     margin: 25px;
 }
 .card {
-    background-color: white;
+    background: linear-gradient(135deg, #123047 0%, #245577 50%, #4ecfd3 100%);
+    background-size: cover;
     padding: 20px;
     margin: 15px;
     border: 2px solid #123047;
@@ -117,6 +119,7 @@ label {
     display: block;
     font-weight: bold;
     margin-top: 10px;
+    color: white;
 }
 #one {
     width: 30%;
@@ -159,7 +162,7 @@ footer {
     color: #123047;
     text-align: center;
     padding: 15px;
-   background-image: linear-gradient(0deg, #123047 0%, #245577 50%, aqua );
+    background-image: linear-gradient(0deg, #123047 0%, #245577 50%, aqua );
     height: 150px;
     font-weight: bold;
 }
@@ -235,12 +238,201 @@ face p {
         margin: 5px;
     }
 }
-#name-input{
-    width: 70%;
+
+h5{
+    color: white;
+}
+#name-input {
+    width: 30%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #123047;
     border-radius: 5px;
     font-size: 16px;
+}
+li{
+    color: white;
+} 
 
+.year-nav {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    background: #123047;
+    padding: 25px 35px;
+
+    border-radius: 18px;
+    border: 1px solid rgba(78, 207, 211, 0.5);
+
+    box-shadow:
+        0 8px 25px rgba(18, 48, 71, 0.4),
+        0 0 20px rgba(78, 207, 211, 0.12);
+}
+
+.year-nav::before {
+    content: "";
+
+    position: absolute;
+
+    left: 55px;
+    right: 55px;
+    top: 50%;
+
+    height: 3px;
+
+    background: #4ecfd3;
+
+    box-shadow: 0 0 10px #4ecfd3;
+
+    z-index: 0;
+}
+
+.year-item {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+}
+
+
+.year {
+    display: flex;
+
+    width: 75px;
+    height: 75px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #123047;
+
+    border: 3px solid #4ecfd3;
+
+    color: aqua;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.year-item:hover .year {
+    background: #4ecfd3;
+
+    color: #123047;
+
+    transform: scale(1.12);
+
+    box-shadow:
+        0 0 10px #4ecfd3,
+        0 0 25px rgba(78, 207, 211, 0.6);
+}
+
+.year-box {
+    position : absolute;
+
+    width: 230px;
+
+    left: 50%;
+    top: 95px;
+
+    transform: translateX(-50%) translateY(-10px);
+
+    padding: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #123047,
+        #245577
+    );
+
+    border: 1px solid #4ecfd3;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 15px rgba(78, 207, 211, 0.2);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.year-box h3 {
+    margin: 0 0 8px;
+
+    color: aqua;
+
+    font-size: 20px;
+}
+
+.year-box p {
+    margin: 0;
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.year-item:hover .year-box {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+@media (max-width: 600px) {
+
+    .year-nav {
+        width: 95%;
+        padding: 20px 10px;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+        gap: 35px;
+    }
+
+    .year-nav::before {
+        left: 45px;
+        right: 45px;
+    }
+
+    .year {
+        width: 65px;
+        height: 65px;
+        font-size: 15px;
+    }
+
+    .year-box {
+        width: 200px;
+    }
+}
+.year-item:hover .year-box {
+    opacity: 1;
+    visibility: visible;
 }
