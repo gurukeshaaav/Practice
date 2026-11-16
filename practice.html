@@ -11,14 +11,15 @@
         <h1>Personal Portfolio Page</h1>
         <p id="greeting">Welcome to my page!</p>
         <button id="greet-button" type="button">Say Hello</button>
-        <label for="name-input">Enter your name</label>
-        <input id="#name-input" type="text">
+        <label for="name-input"></label>
+        <input id="name-input" type="text" placeholder="Enter your name" required>
         <button id="welcome-button" type="button">Greet Me</button>
         <p id="welcome-message"></p>
     </header>
     <nav>
         <a href="#about">About Me</a>
         <a href="#skills">My Skills</a>
+        <a href="#timeline">My Timeline</a>
         <a href="#contact">Contact Me</a>
     </nav>
     <main>
@@ -57,7 +58,7 @@
                         </div>
                         <div class="face back">
                             <h3>HTML</h3>
-                            <p>I use HTML to create the structure of webpages.</p>
+                            <h5>I use HTML to create the structure of webpages.</h5>
                         </div>
                     </div>
                 </div>
@@ -68,7 +69,7 @@
                         </div>
                         <div class="face back">
                             <h3>CSS</h3>
-                            <p>I use CSS to add colours and style to webpages.</p>
+                            <h5>I use CSS to add colours and style to webpages.</h5>
                         </div>
                     </div>
                 </div>
@@ -76,16 +77,58 @@
                     <div class="skill-card">
                         <div class="face front">
                             <h3>Python</h3>
-                        
+                            
                         </div>
                         <div class="face back">
                             <h3>Python</h3>
-                            <p>I enjoy learning Python and solving problems.</p>
+                            <h5>I enjoy learning Python and solving problems.</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="timeline">
+            <h2>My Timeline</h2>
+            <div class="year-nav">
+
+    <div class="year-item">
+        <span class="year">2017</span>
+        <div class="year-box">
+            <h3>2017</h3>
+            <p>Getting my first tablet sparked my interest in technology. 
+            I was fascinated by the UI of its applications and became curious
+            about how they were designed, how they worked, and how coding
+            could be used to create similar interactive experiences.
+            </p>
+        </div>
+    </div>
+
+    <div class="year-item">
+        <span class="year">2020</span>
+        <div class="year-box">
+            <h3>2020</h3>
+            <p>I began exploring video editing tools, creating and publishing my own edited
+            videos on YouTube. This experience sparked my interest in editing and became
+            the foundation of my skills in video creation and visual storytelling.I began
+            exploring video editing tools, creating and publishing my own edited videos on YouTube.
+            This experience sparked my interest in editing and became the foundation of my skills 
+            in video creation and visual storytelling.
+            </p>
+        </div>
+    </div>
+
+    <div class="year-item">
+        <span class="year">2026</span>
+        <div class="year-box">
+            <h3>2026</h3>
+            <p>I began creating small webpages for presentations and experimented with AI tools,
+            which increased my fascination with how websites are designed and coded. This curiosity 
+            motivated me to explore web development more deeply and eventually join the BlueCode 
+            internship to gain practical experience in coding and webpage development.
+            </p>
+        </div>
+    </div>
+            </section>
         <section id="contact">
             <h2>Contact Me</h2>
             <div class="card">
